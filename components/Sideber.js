@@ -17,7 +17,7 @@ const Sideber = () => {
     return (
         <div>
             {/* Logo */}
-            <div>
+            <div className="hoverEffect">
                 <Image width="50" height="50" src="/image/twitterLogo.png"></Image>
             </div>
 
