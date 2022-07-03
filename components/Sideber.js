@@ -1,10 +1,10 @@
 import Image from "next/image";
 import SidebarMenuItem from "./SidebarMenuItem";
-import { BookmarkIcon, ChatIcon, CogIcon, DotsHorizontalIcon, HashtagIcon, HomeIcon, PhotographIcon, TrendingDownIcon, TrendingUpIcon, UserIcon, ViewListIcon } from "@heroicons/react/solid";
+import { BookmarkIcon, ChatIcon, CogIcon, DotsCircleHorizontalIcon, DotsHorizontalIcon, HashtagIcon, HomeIcon, PhotographIcon, TrendingDownIcon, TrendingUpIcon, UserIcon, ViewListIcon } from "@heroicons/react/solid";
 
 const Sideber = () => {
     const MenuItems = [
-        { text: "Home", Icon: HomeIcon },
+        { text: "Home", Icon: HomeIcon, active: active => active === "home" },
         { text: "Profile", Icon: UserIcon },
         { text: "Messages", Icon: ChatIcon },
         { text: "Bookmarks", Icon: BookmarkIcon },
@@ -13,6 +13,7 @@ const Sideber = () => {
         { text: "Discover", Icon: HashtagIcon },
         { text: "Trends", Icon: TrendingUpIcon },
         { text: "Settings", Icon: CogIcon },
+        { text: "More", Icon: DotsCircleHorizontalIcon },
     ];
     return (
         <div>
@@ -23,19 +24,19 @@ const Sideber = () => {
 
             {/* Menu */}
             {
-                MenuItems.map(item => <SidebarMenuItem text={item.text} Icon={item.Icon} />)
+                MenuItems.map(item => <SidebarMenuItem text={item.text} Icon={item.Icon} active={item.active} />)
 
             }
             {/*Tweet Button */}
 
-            <div className="flex justify-center">
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <div>
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full w-56 h-12 shadow-md text-lg hidden xl:inline">
                     Tweet
                 </button>
             </div>
 
             {/* User Profile */}
-            <div className="flex justify-center">
+            <div>
                 <div className="flex items-center">
                     <Image width="50" height="50" src="/image/user.png"></Image>
                     <div className="ml-2">
