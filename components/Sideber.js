@@ -3,6 +3,9 @@ import SidebarMenuItem from "./SidebarMenuItem";
 import { HomeIcon } from "@heroicons/react/solid";
 
 const Sideber = () => {
+    const MenuItems = [
+        { text: "Home", Icon: HomeIcon },
+    ]
     return (
         <div>
             {/* Logo */}
@@ -11,10 +14,10 @@ const Sideber = () => {
             </div>
 
             {/* Menu */}
-            <div>
-                <SidebarMenuItem text="Home" Icon={HomeIcon} />
-            </div>
+            {
+                MenuItems.map(item => <SidebarMenuItem text={item.text} Icon={item.Icon} />)
 
+            }
             {/* Button */}
 
             {/* User Profile */}
