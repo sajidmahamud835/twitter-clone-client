@@ -16,7 +16,7 @@ export default function Home() {
 
         {/* Main Section */}
 
-        {/* Feed */}
+        {/* Twitter Feed */}
 
         {/* Widget */}
 
