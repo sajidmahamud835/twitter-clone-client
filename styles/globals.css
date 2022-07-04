@@ -1,7 +1,41 @@
-/* tailwind utilities */
+/***********************
+ importing tailwind css
+ ***********************/
+/* base styles */
 @tailwind base;
+/* components */
 @tailwind components;
+/* utilities */
 @tailwind utilities;
+
+/***********************
+ custom styles
+ ***********************/
+/* custom styles for fonts and html */
+html {
+  font-size: 62.5%;
+}
+
+/* custom styles for body */
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #333;
+  background-color: #fff;
+}
+
+/* custom styles for a */
+a {
+  color: #1da1f2;
+  text-decoration: none;
+}
+
+/* custom styles for a hover*/
+a:hover {
+  color: #0f8ddd;
+}
 
 
 @layer components {
