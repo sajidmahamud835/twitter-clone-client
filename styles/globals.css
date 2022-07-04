@@ -8,6 +8,6 @@
 
   /* creates hover effects for all sideber items */
   .hoverEffect {
-    @apply cursor-pointer hover:bg-gray-200 rounded-full w-[52px] xl:w-auto h-[52px] xl:h-auto;
+    @apply cursor-pointer hover:bg-gray-200 rounded-full w-[52px] xl:w-auto h-[52px] xl:h-auto py-2 px-4;
   }
 }
