@@ -6,5 +6,4 @@ const SidebarMenuItem = ({ text, Icon, active }) => {
         </div>
     );
 };
-
 export default SidebarMenuItem;

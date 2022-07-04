@@ -17,7 +17,7 @@ const Sideber = () => {
         { text: "More", Icon: DotsCircleHorizontalIcon },
     ];
     return (
-        <div className="hidden sm:flex flex-col">
+        <div className="hidden sm:flex flex-col p-2 xl:items-start fixed h-full">
             {/* Logo */}
             <div className="hoverEffect">
                 <Image width="50" height="50" src="/image/twitterLogo.png"></Image>
