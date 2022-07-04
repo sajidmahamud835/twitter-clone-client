@@ -14,7 +14,7 @@ const Sideber = () => {
         { text: "Discover", Icon: HashtagIcon },
         { text: "Trends", Icon: TrendingUpIcon },
         { text: "Settings", Icon: CogIcon },
-        { text: "More", Icon: DotsCircleHorizontalIcon },
+        { text: "More", Icon: DotsCircleHorizontalIcon }
     ];
     return (
         <div className="hidden sm:flex flex-col p-2 xl:items-start fixed h-full">
