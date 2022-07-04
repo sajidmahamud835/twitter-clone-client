@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Feed from '../components/Feed'
 import Sideber from '../components/Sideber'
 
 export default function Home() {
@@ -10,13 +11,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      {/* Main container */}
       <main className='flex min-h-screen max-w-7xl mx-auto'>
         {/* Sidebar */}
         <Sideber />
 
-        {/* Main Section */}
-
         {/* Twitter Feed */}
+        <Feed />
 
         {/* Widget */}
 
