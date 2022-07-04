@@ -39,12 +39,12 @@ const Sideber = () => {
             {/* User Profile */}
 
             <div className="hoverEffect text-gray-700 flex items-center justify-center xl:justify-start mt-auto">
-                <Image width="50" height="50" src="/image/user.png"></Image>
-                <div className="ml-2">
+                <Image className="h-10 w-10 rounded-full xl:mr-2" width="50" height="50" src="/image/user.png" alt="user-img"></Image>
+                <div className="ml-2 leading-5 hidden xl:inline">
                     <h4 className="font-bold">User Name</h4>
-                    <p className="text-sm">@userName</p>
+                    <p className="text-sm text-gray-500">@userName</p>
                 </div>
-                <DotsHorizontalIcon className="h-5" />
+                <DotsHorizontalIcon className="h-5 xl:ml-8 hidden xl:inline" />
             </div>
 
         </div>
